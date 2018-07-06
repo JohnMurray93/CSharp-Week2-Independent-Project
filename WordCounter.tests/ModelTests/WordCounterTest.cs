@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using WordCounter.Models;
@@ -15,6 +16,7 @@ namespace WordCounter.Tests {
 
             //Assert
             Assert.AreEqual (true, isSameWord);
+            Console.WriteLine ("Is word same? " + isSameWord);
         }
 
         [TestMethod]
@@ -27,6 +29,7 @@ namespace WordCounter.Tests {
             int returnCount = count.GetCount ();
             //Assert
             Assert.AreEqual (correctCount, returnCount);
+            Console.WriteLine (returnCount);
         }
 
         [TestMethod]
@@ -39,10 +42,11 @@ namespace WordCounter.Tests {
             int returnCount = count.GetCount ();
             //Assert
             Assert.AreEqual (correctCount, returnCount);
+            Console.WriteLine (returnCount);
         }
 
         [TestMethod]
-        public void CorrectCountWithPunctuation () {
+        public void CorrectCountWithSpecialCharacters () {
             //Arrange
             WordCount count = new WordCount ("confirm", "confirm, confirm! confirm");
 
@@ -51,6 +55,7 @@ namespace WordCounter.Tests {
             int returnCount = count.GetCount ();
             //Assert
             Assert.AreEqual (correctCount, returnCount);
+            Console.WriteLine (returnCount);
         }
     }
 }
