@@ -33,6 +33,8 @@ namespace WordCounter.Models {
             sentence = sentence.Replace (")", "");
             sentence = sentence.Replace ("-", "");
             sentence = sentence.Replace ("_", "");
+            sentence = sentence.Replace ("`", "");
+            sentence = sentence.Replace ("~", "");
             string[] split = sentence.Split ();
 
             if (word.Length == 0 || split.Length == 0) {
