@@ -1,18 +1,18 @@
 @{
   Layout = "_Layout";
 }
-<h1>Word Counter!</h1>
+<h1 class="white-header">Next Generation Word Counter</h1>
 <form action="/count" method="post">
   <div class="form-group">
-    <h3>Enter a word</h3>
+    <h3 class="red-header">Enter a word</h3>
+    <input name="searchWord" class="form-control" type="text">  
     <label for="searchWord">Word to search for:</label>
-    <input name="searchWord" class="form-control" type="text">
   </div>
   <div class="form-group">
-    <h3>Enter a sentence</h3>
-    <label for="sentence">Sentence to search:</label>
+    <h3 class="red-header">Enter a sentence</h3>
     <input name="sentence" class="form-control" type="text">
+    <label for="sentence">Sentence to search:</label>
   </div>
 <br>
-  <button type="submit" class="btn-info">Submit</button>
+  <button type="submit" class="btn">Submit</button>
 </form>

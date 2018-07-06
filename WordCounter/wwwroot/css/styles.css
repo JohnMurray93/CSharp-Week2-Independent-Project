@@ -1,0 +1,35 @@
+body {
+  background-color: black;
+}
+
+#layout_container {
+  text-align: center;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#splash-header {
+  color: aqua;
+}
+
+#splash-link {
+  font-style: italic;
+  color: aqua;
+  text-decoration-color: red;
+  text-decoration-line: underline;
+}
+
+#splash-link:hover {
+  color: red;
+  text-decoration-line: none;
+}
+
+.white-header {
+  color: white;
+}
+
+.red-header {
+  color: red;
+}
